@@ -22,7 +22,6 @@
             <ul v-else>
                 
                 <li v-for="(task, i) in tasks" :key="i" :class="i % 2 === 0 ? 'back-blue' : 'back-light-blue' ">
-                   
                     <span @click="doneTask(i)" class="list-item" :class="task.done === true ? 'crossed' : '' ">{{task.text}}</span>
                     <span class="check" @click="removeTask(i)">&check;</span>
                 </li>
