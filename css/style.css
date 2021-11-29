@@ -75,3 +75,25 @@ span {
     color: white;
     border-radius: 50px;
 }
+
+.check {
+    font-size: 40px;
+}
+.list-item:hover {
+    text-decoration: line-through 3px;
+    color: rgb(0, 204, 255);
+
+}
+.crossed {
+    text-decoration: line-through 3px;
+    color: rgb(0, 204, 255);
+}
+
+.task-box {
+    width: 40%;
+}
+
+.free{
+    color: #34495e;
+    font-size: 30px;
+}

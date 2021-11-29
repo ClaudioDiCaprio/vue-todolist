@@ -9,20 +9,23 @@
 </head>
 <body>
     <div id="root" class="container">
+
         <h1 class="title">ToDo List &check;</h1>
+
         <div class="add-box">
-            <input type="text" placeholder="Add a new task">
-            <button>Add</button>
+            <input type="text" placeholder="Add a new task" v-model="newTask.text" @keyup.enter="add">
+            <button @click="add">Add</button>
         </div>
+       
         <div class="task-box">
-            
-            <ul>
+            <div class="free" v-if="tasks.length === 0"> you're all done!! =]</div> 
+            <ul v-else>
                 
-                <li class="back-blue">
-                    <span></span>
-                    <span></span> &check;</span>
+                <li v-for="(task, i) in tasks" :key="i" :class="i % 2 === 0 ? 'back-blue' : 'back-light-blue' ">
+                   
+                    <span @click="doneTask(i)" class="list-item" :class="task.done === true ? 'crossed' : '' ">{{task.text}}</span>
+                    <span class="check" @click="removeTask(i)">&check;</span>
                 </li>
-                
             </ul>
         </div>
 
