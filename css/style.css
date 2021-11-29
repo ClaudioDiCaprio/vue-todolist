@@ -24,3 +24,27 @@
     margin-bottom: 100px;
     border-radius: 70px;
 }
+
+.add-box {
+    margin-bottom: 50px;
+    width: 40%;
+    text-align: center;
+}
+
+input,
+button {
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #34495e;
+}
+
+.add-box input {
+    width: 60%;
+    padding-left: 10px;
+}
+
+.add-box button {
+    width: 10%;
+    background-color: #446381;
+    color: white;
+}
