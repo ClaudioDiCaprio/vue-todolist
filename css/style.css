@@ -48,3 +48,30 @@ button {
     background-color: #446381;
     color: white;
 }
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    line-height: 60px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.back-blue {
+    background-color: #34495e;
+    color: white;
+    border-radius: 50px;
+}
+.back-light-blue {
+    margin: 20px 0;
+    background-color: #446381;
+    color: white;
+    border-radius: 50px;
+}
